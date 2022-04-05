@@ -53,6 +53,14 @@ extension TravelInfoViewController: CLLocationManagerDelegate {
         guard let latestLocation = locations.first else {return}
         
         currentLocation = latestLocation.coordinate
+        
+        let region = MKCoordinateRegion(center: currentLocation,
+                                        latitudinalMeters: 100000,
+                                        longitudinalMeters: 100000)
+        mapView.setCameraBoundary(MKMapView.CameraBoundary(coordinateRegion: region),animated: true)
+        
+        let zoomRange = MKMapView.CameraZoomRange(maxCenterCoordinateDistance: 1000000)
+        mapView.setCameraZoomRange(zoomRange, animated: true)
 
         mapView.centerToLocation(currentLocation)
         
