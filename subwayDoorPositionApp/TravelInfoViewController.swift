@@ -7,21 +7,29 @@
 
 import UIKit
 import CoreLocation
+import MapKit
 
 class TravelInfoViewController: UIViewController {
     
     var locationManager = CLLocationManager()
     var currentLocation = CLLocationCoordinate2D()
+    
+    let mapView = MKMapView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        locationManager.delegate = self
-        locationManager.startUpdatingLocation()
+               
         getLocationUsagePermission()
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest // 정확한 위치 정보 받기
-        locationManagerDidChangeAuthorization(locationManager)
+        locationManager.delegate = self
+              
+        mapView.showsUserLocation = true // 현재 위치 표시 
+        self.view.addSubview(mapView)
         
+        
+    }
+   
+    override func viewDidLayoutSubviews() {
+        mapView.frame = self.view.bounds
     }
 
 
@@ -31,6 +39,17 @@ extension TravelInfoViewController: CLLocationManagerDelegate {
     
     func getLocationUsagePermission() {
         self.locationManager.requestWhenInUseAuthorization()
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        print("최신 정보 받음")
+        
+        guard let latestLocation = locations.first else {return}
+        
+        currentLocation = latestLocation.coordinate
+
+        mapView.centerToLocation(currentLocation)
+        
     }
     
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
@@ -47,4 +66,13 @@ extension TravelInfoViewController: CLLocationManagerDelegate {
         }
         
     }
+}
+
+private extension MKMapView {
+  func centerToLocation(_ location: CLLocationCoordinate2D, regionRadius: CLLocationDistance = 1000) {
+    let coordinateRegion = MKCoordinateRegion(center: location,
+                                              latitudinalMeters: regionRadius,
+                                              longitudinalMeters: regionRadius)
+    setRegion(coordinateRegion, animated: true)
+  }
 }
