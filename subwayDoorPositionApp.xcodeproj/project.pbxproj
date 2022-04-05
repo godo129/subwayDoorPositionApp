@@ -1,0 +1,696 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F1CA96BE27FB1F55005FFAF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA96BD27FB1F55005FFAF5 /* AppDelegate.swift */; };
+		F1CA96C027FB1F55005FFAF5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA96BF27FB1F55005FFAF5 /* SceneDelegate.swift */; };
+		F1CA96C227FB1F55005FFAF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA96C127FB1F55005FFAF5 /* ViewController.swift */; };
+		F1CA96C527FB1F55005FFAF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1CA96C327FB1F55005FFAF5 /* Main.storyboard */; };
+		F1CA96C727FB1F57005FFAF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1CA96C627FB1F57005FFAF5 /* Assets.xcassets */; };
+		F1CA96CA27FB1F57005FFAF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1CA96C827FB1F57005FFAF5 /* LaunchScreen.storyboard */; };
+		F1CA96CF27FB1F57005FFAF5 /* subwayDoorPositionApp WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F1CA96CE27FB1F57005FFAF5 /* subwayDoorPositionApp WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F1CA96D527FB1F57005FFAF5 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1CA96D327FB1F57005FFAF5 /* Interface.storyboard */; };
+		F1CA96D727FB1F57005FFAF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1CA96D627FB1F57005FFAF5 /* Assets.xcassets */; };
+		F1CA96DD27FB1F57005FFAF5 /* subwayDoorPositionApp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F1CA96DC27FB1F57005FFAF5 /* subwayDoorPositionApp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F1CA96E227FB1F57005FFAF5 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA96E127FB1F57005FFAF5 /* InterfaceController.swift */; };
+		F1CA96E427FB1F57005FFAF5 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA96E327FB1F57005FFAF5 /* ExtensionDelegate.swift */; };
+		F1CA96E627FB1F57005FFAF5 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA96E527FB1F57005FFAF5 /* ComplicationController.swift */; };
+		F1CA96E827FB1F58005FFAF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1CA96E727FB1F58005FFAF5 /* Assets.xcassets */; };
+		F1CA96F927FBBC6D005FFAF5 /* stopInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA96F827FBBC6D005FFAF5 /* stopInfo.swift */; };
+		F1CA96FB27FBF548005FFAF5 /* TravelInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA96FA27FBF548005FFAF5 /* TravelInfoViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F1CA96D027FB1F57005FFAF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1CA96B227FB1F55005FFAF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1CA96CD27FB1F57005FFAF5;
+			remoteInfo = "subwayDoorPositionApp WatchKit App";
+		};
+		F1CA96DE27FB1F57005FFAF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1CA96B227FB1F55005FFAF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1CA96DB27FB1F57005FFAF5;
+			remoteInfo = "subwayDoorPositionApp WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F1CA96EF27FB1F58005FFAF5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F1CA96DD27FB1F57005FFAF5 /* subwayDoorPositionApp WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1CA96F327FB1F58005FFAF5 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				F1CA96CF27FB1F57005FFAF5 /* subwayDoorPositionApp WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F1CA96BA27FB1F55005FFAF5 /* subwayDoorPositionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = subwayDoorPositionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1CA96BD27FB1F55005FFAF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F1CA96BF27FB1F55005FFAF5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F1CA96C127FB1F55005FFAF5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F1CA96C427FB1F55005FFAF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F1CA96C627FB1F57005FFAF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1CA96C927FB1F57005FFAF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F1CA96CB27FB1F57005FFAF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1CA96CE27FB1F57005FFAF5 /* subwayDoorPositionApp WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "subwayDoorPositionApp WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1CA96D427FB1F57005FFAF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		F1CA96D627FB1F57005FFAF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1CA96DC27FB1F57005FFAF5 /* subwayDoorPositionApp WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "subwayDoorPositionApp WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1CA96E127FB1F57005FFAF5 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		F1CA96E327FB1F57005FFAF5 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		F1CA96E527FB1F57005FFAF5 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		F1CA96E727FB1F58005FFAF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1CA96E927FB1F58005FFAF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1CA96F827FBBC6D005FFAF5 /* stopInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stopInfo.swift; sourceTree = "<group>"; };
+		F1CA96FA27FBF548005FFAF5 /* TravelInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelInfoViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1CA96B727FB1F55005FFAF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1CA96D927FB1F57005FFAF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F1CA96B127FB1F55005FFAF5 = {
+			isa = PBXGroup;
+			children = (
+				F1CA96BC27FB1F55005FFAF5 /* subwayDoorPositionApp */,
+				F1CA96D227FB1F57005FFAF5 /* subwayDoorPositionApp WatchKit App */,
+				F1CA96E027FB1F57005FFAF5 /* subwayDoorPositionApp WatchKit Extension */,
+				F1CA96BB27FB1F55005FFAF5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F1CA96BB27FB1F55005FFAF5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1CA96BA27FB1F55005FFAF5 /* subwayDoorPositionApp.app */,
+				F1CA96CE27FB1F57005FFAF5 /* subwayDoorPositionApp WatchKit App.app */,
+				F1CA96DC27FB1F57005FFAF5 /* subwayDoorPositionApp WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1CA96BC27FB1F55005FFAF5 /* subwayDoorPositionApp */ = {
+			isa = PBXGroup;
+			children = (
+				F1CA96F727FBBC54005FFAF5 /* model */,
+				F1CA96BD27FB1F55005FFAF5 /* AppDelegate.swift */,
+				F1CA96BF27FB1F55005FFAF5 /* SceneDelegate.swift */,
+				F1CA96C127FB1F55005FFAF5 /* ViewController.swift */,
+				F1CA96C327FB1F55005FFAF5 /* Main.storyboard */,
+				F1CA96C627FB1F57005FFAF5 /* Assets.xcassets */,
+				F1CA96C827FB1F57005FFAF5 /* LaunchScreen.storyboard */,
+				F1CA96CB27FB1F57005FFAF5 /* Info.plist */,
+				F1CA96FA27FBF548005FFAF5 /* TravelInfoViewController.swift */,
+			);
+			path = subwayDoorPositionApp;
+			sourceTree = "<group>";
+		};
+		F1CA96D227FB1F57005FFAF5 /* subwayDoorPositionApp WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				F1CA96D327FB1F57005FFAF5 /* Interface.storyboard */,
+				F1CA96D627FB1F57005FFAF5 /* Assets.xcassets */,
+			);
+			path = "subwayDoorPositionApp WatchKit App";
+			sourceTree = "<group>";
+		};
+		F1CA96E027FB1F57005FFAF5 /* subwayDoorPositionApp WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F1CA96E127FB1F57005FFAF5 /* InterfaceController.swift */,
+				F1CA96E327FB1F57005FFAF5 /* ExtensionDelegate.swift */,
+				F1CA96E527FB1F57005FFAF5 /* ComplicationController.swift */,
+				F1CA96E727FB1F58005FFAF5 /* Assets.xcassets */,
+				F1CA96E927FB1F58005FFAF5 /* Info.plist */,
+			);
+			path = "subwayDoorPositionApp WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		F1CA96F727FBBC54005FFAF5 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				F1CA96F827FBBC6D005FFAF5 /* stopInfo.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1CA96B927FB1F55005FFAF5 /* subwayDoorPositionApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1CA96F427FB1F58005FFAF5 /* Build configuration list for PBXNativeTarget "subwayDoorPositionApp" */;
+			buildPhases = (
+				F1CA96B627FB1F55005FFAF5 /* Sources */,
+				F1CA96B727FB1F55005FFAF5 /* Frameworks */,
+				F1CA96B827FB1F55005FFAF5 /* Resources */,
+				F1CA96F327FB1F58005FFAF5 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1CA96D127FB1F57005FFAF5 /* PBXTargetDependency */,
+			);
+			name = subwayDoorPositionApp;
+			productName = subwayDoorPositionApp;
+			productReference = F1CA96BA27FB1F55005FFAF5 /* subwayDoorPositionApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F1CA96CD27FB1F57005FFAF5 /* subwayDoorPositionApp WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1CA96F027FB1F58005FFAF5 /* Build configuration list for PBXNativeTarget "subwayDoorPositionApp WatchKit App" */;
+			buildPhases = (
+				F1CA96CC27FB1F57005FFAF5 /* Resources */,
+				F1CA96EF27FB1F58005FFAF5 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1CA96DF27FB1F57005FFAF5 /* PBXTargetDependency */,
+			);
+			name = "subwayDoorPositionApp WatchKit App";
+			productName = "subwayDoorPositionApp WatchKit App";
+			productReference = F1CA96CE27FB1F57005FFAF5 /* subwayDoorPositionApp WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		F1CA96DB27FB1F57005FFAF5 /* subwayDoorPositionApp WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1CA96EC27FB1F58005FFAF5 /* Build configuration list for PBXNativeTarget "subwayDoorPositionApp WatchKit Extension" */;
+			buildPhases = (
+				F1CA96D827FB1F57005FFAF5 /* Sources */,
+				F1CA96D927FB1F57005FFAF5 /* Frameworks */,
+				F1CA96DA27FB1F57005FFAF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "subwayDoorPositionApp WatchKit Extension";
+			productName = "subwayDoorPositionApp WatchKit Extension";
+			productReference = F1CA96DC27FB1F57005FFAF5 /* subwayDoorPositionApp WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1CA96B227FB1F55005FFAF5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					F1CA96B927FB1F55005FFAF5 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					F1CA96CD27FB1F57005FFAF5 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					F1CA96DB27FB1F57005FFAF5 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = F1CA96B527FB1F55005FFAF5 /* Build configuration list for PBXProject "subwayDoorPositionApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1CA96B127FB1F55005FFAF5;
+			productRefGroup = F1CA96BB27FB1F55005FFAF5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1CA96B927FB1F55005FFAF5 /* subwayDoorPositionApp */,
+				F1CA96CD27FB1F57005FFAF5 /* subwayDoorPositionApp WatchKit App */,
+				F1CA96DB27FB1F57005FFAF5 /* subwayDoorPositionApp WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1CA96B827FB1F55005FFAF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1CA96CA27FB1F57005FFAF5 /* LaunchScreen.storyboard in Resources */,
+				F1CA96C727FB1F57005FFAF5 /* Assets.xcassets in Resources */,
+				F1CA96C527FB1F55005FFAF5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1CA96CC27FB1F57005FFAF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1CA96D727FB1F57005FFAF5 /* Assets.xcassets in Resources */,
+				F1CA96D527FB1F57005FFAF5 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1CA96DA27FB1F57005FFAF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1CA96E827FB1F58005FFAF5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1CA96B627FB1F55005FFAF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1CA96C227FB1F55005FFAF5 /* ViewController.swift in Sources */,
+				F1CA96BE27FB1F55005FFAF5 /* AppDelegate.swift in Sources */,
+				F1CA96FB27FBF548005FFAF5 /* TravelInfoViewController.swift in Sources */,
+				F1CA96C027FB1F55005FFAF5 /* SceneDelegate.swift in Sources */,
+				F1CA96F927FBBC6D005FFAF5 /* stopInfo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1CA96D827FB1F57005FFAF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1CA96E427FB1F57005FFAF5 /* ExtensionDelegate.swift in Sources */,
+				F1CA96E227FB1F57005FFAF5 /* InterfaceController.swift in Sources */,
+				F1CA96E627FB1F57005FFAF5 /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F1CA96D127FB1F57005FFAF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1CA96CD27FB1F57005FFAF5 /* subwayDoorPositionApp WatchKit App */;
+			targetProxy = F1CA96D027FB1F57005FFAF5 /* PBXContainerItemProxy */;
+		};
+		F1CA96DF27FB1F57005FFAF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1CA96DB27FB1F57005FFAF5 /* subwayDoorPositionApp WatchKit Extension */;
+			targetProxy = F1CA96DE27FB1F57005FFAF5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F1CA96C327FB1F55005FFAF5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1CA96C427FB1F55005FFAF5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F1CA96C827FB1F57005FFAF5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1CA96C927FB1F57005FFAF5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F1CA96D327FB1F57005FFAF5 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1CA96D427FB1F57005FFAF5 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F1CA96EA27FB1F58005FFAF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F1CA96EB27FB1F58005FFAF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		F1CA96ED27FB1F58005FFAF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KD3GVSQ9P4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "subwayDoorPositionApp WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "subwayDoorPositionApp WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.godo.subwayDoorPositionApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		F1CA96EE27FB1F58005FFAF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KD3GVSQ9P4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "subwayDoorPositionApp WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "subwayDoorPositionApp WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.godo.subwayDoorPositionApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		F1CA96F127FB1F58005FFAF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KD3GVSQ9P4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = subwayDoorPositionApp_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "subwayDoorPositionApp WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = co.godo.subwayDoorPositionApp;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.godo.subwayDoorPositionApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		F1CA96F227FB1F58005FFAF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KD3GVSQ9P4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = subwayDoorPositionApp_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "subwayDoorPositionApp WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = co.godo.subwayDoorPositionApp;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.godo.subwayDoorPositionApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		F1CA96F527FB1F58005FFAF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KD3GVSQ9P4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = subwayDoorPositionApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.godo.subwayDoorPositionApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F1CA96F627FB1F58005FFAF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KD3GVSQ9P4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = subwayDoorPositionApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.godo.subwayDoorPositionApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1CA96B527FB1F55005FFAF5 /* Build configuration list for PBXProject "subwayDoorPositionApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1CA96EA27FB1F58005FFAF5 /* Debug */,
+				F1CA96EB27FB1F58005FFAF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1CA96EC27FB1F58005FFAF5 /* Build configuration list for PBXNativeTarget "subwayDoorPositionApp WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1CA96ED27FB1F58005FFAF5 /* Debug */,
+				F1CA96EE27FB1F58005FFAF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1CA96F027FB1F58005FFAF5 /* Build configuration list for PBXNativeTarget "subwayDoorPositionApp WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1CA96F127FB1F58005FFAF5 /* Debug */,
+				F1CA96F227FB1F58005FFAF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1CA96F427FB1F58005FFAF5 /* Build configuration list for PBXNativeTarget "subwayDoorPositionApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1CA96F527FB1F58005FFAF5 /* Debug */,
+				F1CA96F627FB1F58005FFAF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F1CA96B227FB1F55005FFAF5 /* Project object */;
+}
