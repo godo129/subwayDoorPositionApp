@@ -11,7 +11,13 @@ import MapKit
 
 class TravelInfoViewController: UIViewController {
     
-    var locationManager = CLLocationManager()
+    var locationManager: CLLocationManager = {
+        let locationManager = CLLocationManager()
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest // 정확한 위치 정보 받기
+        locationManager.startUpdatingLocation()
+        return locationManager
+    }()
+    
     var currentLocation = CLLocationCoordinate2D()
     
     let mapView = MKMapView()
