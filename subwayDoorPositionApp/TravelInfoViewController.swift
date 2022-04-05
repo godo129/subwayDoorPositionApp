@@ -17,7 +17,11 @@ class TravelInfoViewController: UIViewController {
         super.viewDidLoad()
         
         locationManager.delegate = self
+        locationManager.startUpdatingLocation()
         getLocationUsagePermission()
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest // 정확한 위치 정보 받기
+        locationManagerDidChangeAuthorization(locationManager)
+        
     }
 
 
@@ -40,7 +44,6 @@ extension TravelInfoViewController: CLLocationManagerDelegate {
             print("권한 요청 거부 됨")
         default :
             print("GPS, Default")
-            
         }
         
     }
