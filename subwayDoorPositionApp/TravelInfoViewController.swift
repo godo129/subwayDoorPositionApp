@@ -31,7 +31,12 @@ class TravelInfoViewController: UIViewController {
         mapView.showsUserLocation = true // 현재 위치 표시 
         self.view.addSubview(mapView)
         
+        let annot = stopInfo(name: "숭실대역", lineName: "7호선", coordinate: CLLocationCoordinate2D(latitude: 37.498566910001166, longitude: 126.94889144107556), doorPosition: "동", heading: "노원")
         
+        mapView.addAnnotation(annot)
+        
+        mapView.delegate = self
+              
     }
    
     override func viewDidLayoutSubviews() {
@@ -89,4 +94,26 @@ private extension MKMapView {
                                               longitudinalMeters: regionRadius)
     setRegion(coordinateRegion, animated: true)
   }
+}
+
+extension TravelInfoViewController: MKMapViewDelegate {
+    
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        guard let annotation = annotation as? stopInfo else {return nil}
+        
+        let identifier = "stopInfo"
+        var view : MKMarkerAnnotationView
+        
+        if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKMarkerAnnotationView {
+            dequeuedView.annotation = annotation
+            view = dequeuedView
+        } else {
+            view = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+            view.canShowCallout = true
+            view.calloutOffset = CGPoint(x: -5, y: 5)
+            view.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+        }
+        return view
+
+    }
 }
