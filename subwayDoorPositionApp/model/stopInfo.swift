@@ -6,6 +6,7 @@
 //
 
 import MapKit
+import Contacts
 
 class stopInfo: NSObject, MKAnnotation {
     
@@ -31,6 +32,19 @@ class stopInfo: NSObject, MKAnnotation {
     
     var subtitle: String? { // 클릭하면 어노테이션 나오게 함
         return heading
+    }
+    
+    var mapItem: MKMapItem? {
+        guard let location = name else {
+            return nil
+        }
+        
+        let addressDict = [CNPostalAddressPostalCodeKey: location]
+        let placemark = MKPlacemark(coordinate: coordinate, addressDictionary: addressDict)
+        
+        let mapItem = MKMapItem(placemark: placemark)
+        mapItem.name = title
+        return mapItem
     }
 
 }

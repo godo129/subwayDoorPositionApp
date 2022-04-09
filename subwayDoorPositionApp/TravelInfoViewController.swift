@@ -33,7 +33,10 @@ class TravelInfoViewController: UIViewController {
         
         let annot = stopInfo(name: "숭실대역", lineName: "7호선", coordinate: CLLocationCoordinate2D(latitude: 37.498566910001166, longitude: 126.94889144107556), doorPosition: "동", heading: "노원")
         
+        let annot2 = stopInfo(name: "신논현역", lineName: "9호선", coordinate: CLLocationCoordinate2D(latitude: 37.50480751, longitude: 127.0254694), doorPosition: "동", heading: "노원")
+        
         mapView.addAnnotation(annot)
+        mapView.addAnnotation(annot2)
         
         mapView.delegate = self
               
@@ -58,6 +61,8 @@ extension TravelInfoViewController: CLLocationManagerDelegate {
         guard let latestLocation = locations.first else {return}
         
         currentLocation = latestLocation.coordinate
+        
+        print(currentLocation)
         
         let region = MKCoordinateRegion(center: currentLocation,
                                         latitudinalMeters: 100000,
@@ -115,5 +120,12 @@ extension TravelInfoViewController: MKMapViewDelegate {
         }
         return view
 
+    }
+    
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        guard let stop = view.annotation as? stopInfo else {return}
+        
+        let launchOptions = [ MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving]
+        stop.mapItem?.openInMaps(launchOptions: launchOptions)
     }
 }
