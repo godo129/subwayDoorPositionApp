@@ -32,7 +32,8 @@ class ViewController: UIViewController {
         self.view.addSubview(getSubwayLineInfoButton)
         self.view.addSubview(getYourTravelInfoButton)
         
-        getSubwayLineInfoButton.addTarget(self, action: #selector(getSubwayLineInfoButtonTapped), for: .touchUpInside)
+        
+        getYourTravelInfoButton.addTarget(self, action: #selector(getSubwayLineInfoButtonTapped), for: .touchUpInside)
     }
     
     @objc func getSubwayLineInfoButtonTapped() {
@@ -43,11 +44,11 @@ class ViewController: UIViewController {
     
     override func viewDidLayoutSubviews() {
         getSubwayLineInfoButton.frame = CGRect(x: self.view.frame.maxX/3,
-                                               y: self.view.frame.maxY/3,
+                                               y: self.view.frame.maxY/8,
                                                width: self.view.frame.maxX/2,
                                                height: self.view.frame.maxY/3)
-        getYourTravelInfoButton.frame = CGRect(x: getSubwayLineInfoButton.frame.origin.x + self.view.frame.maxX/10,
-                                               y: getSubwayLineInfoButton.frame.origin.y + self.view.frame.maxY/10,
+        getYourTravelInfoButton.frame = CGRect(x: getSubwayLineInfoButton.frame.origin.x,
+                                               y: getSubwayLineInfoButton.frame.origin.y + self.getSubwayLineInfoButton.frame.height,
                                                width: getSubwayLineInfoButton.frame.width,
                                                height: getSubwayLineInfoButton.frame.height)
     }
