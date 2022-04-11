@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F187DDE52803FB1200888AC9 /* SubwayInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187DDE42803FB1200888AC9 /* SubwayInfoViewController.swift */; };
+		F187DDE72803FB5E00888AC9 /* StopButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187DDE62803FB5E00888AC9 /* StopButton.swift */; };
 		F1CA96BE27FB1F55005FFAF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA96BD27FB1F55005FFAF5 /* AppDelegate.swift */; };
 		F1CA96C027FB1F55005FFAF5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA96BF27FB1F55005FFAF5 /* SceneDelegate.swift */; };
 		F1CA96C227FB1F55005FFAF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA96C127FB1F55005FFAF5 /* ViewController.swift */; };
@@ -68,6 +70,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F187DDE42803FB1200888AC9 /* SubwayInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayInfoViewController.swift; sourceTree = "<group>"; };
+		F187DDE62803FB5E00888AC9 /* StopButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopButton.swift; sourceTree = "<group>"; };
 		F1CA96BA27FB1F55005FFAF5 /* subwayDoorPositionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = subwayDoorPositionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1CA96BD27FB1F55005FFAF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1CA96BF27FB1F55005FFAF5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -139,6 +143,7 @@
 				F1CA96C827FB1F57005FFAF5 /* LaunchScreen.storyboard */,
 				F1CA96CB27FB1F57005FFAF5 /* Info.plist */,
 				F1CA96FA27FBF548005FFAF5 /* TravelInfoViewController.swift */,
+				F187DDE42803FB1200888AC9 /* SubwayInfoViewController.swift */,
 			);
 			path = subwayDoorPositionApp;
 			sourceTree = "<group>";
@@ -168,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				F1CA96F827FBBC6D005FFAF5 /* stopInfo.swift */,
+				F187DDE62803FB5E00888AC9 /* StopButton.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -305,10 +311,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1CA96C227FB1F55005FFAF5 /* ViewController.swift in Sources */,
+				F187DDE72803FB5E00888AC9 /* StopButton.swift in Sources */,
 				F1CA96BE27FB1F55005FFAF5 /* AppDelegate.swift in Sources */,
 				F1CA96FB27FBF548005FFAF5 /* TravelInfoViewController.swift in Sources */,
 				F1CA96C027FB1F55005FFAF5 /* SceneDelegate.swift in Sources */,
 				F1CA96F927FBBC6D005FFAF5 /* stopInfo.swift in Sources */,
+				F187DDE52803FB1200888AC9 /* SubwayInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
