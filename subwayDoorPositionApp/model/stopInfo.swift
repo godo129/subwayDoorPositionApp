@@ -34,6 +34,33 @@ class stopInfo: NSObject, MKAnnotation {
         return heading
     }
     
+    var markerTintColor: UIColor {
+        switch lineName {
+        case "1호선" :
+            return .blue
+        case "2호선" :
+            return .green
+        case "3호선" :
+            return .orange
+        case "4호선" :
+            return .cyan
+        case "5호선" :
+            return .purple
+        case "6호선" :
+            return .brown
+        case "7호선" :
+            return .link
+        case "8호선" :
+            return .systemPink
+        case "9호선" :
+            return .yellow
+        case "신분당" :
+            return .lightGray
+        default :
+            return .cyan
+        }
+    }
+    
     var mapItem: MKMapItem? {
         guard let location = name else {
             return nil
