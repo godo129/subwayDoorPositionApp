@@ -61,6 +61,22 @@ class stopInfo: NSObject, MKAnnotation {
         }
     }
     
+    var image: UIImage {
+        
+        guard let name = name else {
+            return UIImage(imageLiteralResourceName: "Flage")
+        }
+        
+        switch name {
+            
+        case "9호선" :
+            return UIImage(imageLiteralResourceName: "Mount")
+        default :
+            return UIImage(imageLiteralResourceName: "Sculpture")
+        }
+        
+    }
+    
     var mapItem: MKMapItem? {
         guard let location = name else {
             return nil
