@@ -9,9 +9,27 @@
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="subwayDoorPositionApp_WatchKit_App" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="subwayDoorPositionApp_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" title="지하철" id="06A-xO-VnZ">
+                            <connections>
+                                <action selector="SubwayInfoButtonTapped" destination="AgC-eL-Hgc" id="tsf-Da-NNh"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="SubwayInfoButton" destination="06A-xO-VnZ" id="wHT-Wk-ESv"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="-26" y="-44"/>
+        </scene>
+        <!--SubwayInfo-->
+        <scene sceneID="Lzm-pv-0Ma">
+            <objects>
+                <controller identifier="SubwayInfo" id="QAo-of-fJh" customClass="SubwayInfomationController" customModule="subwayDoorPositionApp_WatchKit_Extension"/>
+            </objects>
+            <point key="canvasLocation" x="207" y="-44"/>
         </scene>
     </scenes>
 </document>
