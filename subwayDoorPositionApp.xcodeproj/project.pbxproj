@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F101894C280D41D800D175B9 /* HomeWKInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F101894B280D41D800D175B9 /* HomeWKInterfaceController.swift */; };
+		F101894F280D449600D175B9 /* TrainLaneInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F101894E280D449600D175B9 /* TrainLaneInfoView.swift */; };
+		F1018951280D44A700D175B9 /* CurrentLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1018950280D44A700D175B9 /* CurrentLocationView.swift */; };
+		F1018953280D44B600D175B9 /* DoorInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1018952280D44B600D175B9 /* DoorInfoView.swift */; };
 		F187DDE52803FB1200888AC9 /* SubwayInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187DDE42803FB1200888AC9 /* SubwayInfoViewController.swift */; };
 		F187DDE72803FB5E00888AC9 /* StopButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187DDE62803FB5E00888AC9 /* StopButton.swift */; };
+		F187DDE928052CE500888AC9 /* stopMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187DDE828052CE500888AC9 /* stopMarkerView.swift */; };
 		F1CA96BE27FB1F55005FFAF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA96BD27FB1F55005FFAF5 /* AppDelegate.swift */; };
 		F1CA96C027FB1F55005FFAF5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA96BF27FB1F55005FFAF5 /* SceneDelegate.swift */; };
 		F1CA96C227FB1F55005FFAF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA96C127FB1F55005FFAF5 /* ViewController.swift */; };
@@ -70,8 +75,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F101894B280D41D800D175B9 /* HomeWKInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWKInterfaceController.swift; sourceTree = "<group>"; };
+		F101894E280D449600D175B9 /* TrainLaneInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainLaneInfoView.swift; sourceTree = "<group>"; };
+		F1018950280D44A700D175B9 /* CurrentLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationView.swift; sourceTree = "<group>"; };
+		F1018952280D44B600D175B9 /* DoorInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorInfoView.swift; sourceTree = "<group>"; };
 		F187DDE42803FB1200888AC9 /* SubwayInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayInfoViewController.swift; sourceTree = "<group>"; };
 		F187DDE62803FB5E00888AC9 /* StopButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopButton.swift; sourceTree = "<group>"; };
+		F187DDE828052CE500888AC9 /* stopMarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stopMarkerView.swift; sourceTree = "<group>"; };
 		F1CA96BA27FB1F55005FFAF5 /* subwayDoorPositionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = subwayDoorPositionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1CA96BD27FB1F55005FFAF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1CA96BF27FB1F55005FFAF5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +121,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F101894D280D447800D175B9 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				F101894B280D41D800D175B9 /* HomeWKInterfaceController.swift */,
+				F101894E280D449600D175B9 /* TrainLaneInfoView.swift */,
+				F1018950280D44A700D175B9 /* CurrentLocationView.swift */,
+				F1018952280D44B600D175B9 /* DoorInfoView.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		F1018954280D458600D175B9 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				F1CA96C127FB1F55005FFAF5 /* ViewController.swift */,
+				F1CA96FA27FBF548005FFAF5 /* TravelInfoViewController.swift */,
+				F187DDE42803FB1200888AC9 /* SubwayInfoViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
 		F1CA96B127FB1F55005FFAF5 = {
 			isa = PBXGroup;
 			children = (
@@ -134,16 +165,14 @@
 		F1CA96BC27FB1F55005FFAF5 /* subwayDoorPositionApp */ = {
 			isa = PBXGroup;
 			children = (
+				F1018954280D458600D175B9 /* controller */,
 				F1CA96F727FBBC54005FFAF5 /* model */,
 				F1CA96BD27FB1F55005FFAF5 /* AppDelegate.swift */,
 				F1CA96BF27FB1F55005FFAF5 /* SceneDelegate.swift */,
-				F1CA96C127FB1F55005FFAF5 /* ViewController.swift */,
 				F1CA96C327FB1F55005FFAF5 /* Main.storyboard */,
 				F1CA96C627FB1F57005FFAF5 /* Assets.xcassets */,
 				F1CA96C827FB1F57005FFAF5 /* LaunchScreen.storyboard */,
 				F1CA96CB27FB1F57005FFAF5 /* Info.plist */,
-				F1CA96FA27FBF548005FFAF5 /* TravelInfoViewController.swift */,
-				F187DDE42803FB1200888AC9 /* SubwayInfoViewController.swift */,
 			);
 			path = subwayDoorPositionApp;
 			sourceTree = "<group>";
@@ -160,6 +189,7 @@
 		F1CA96E027FB1F57005FFAF5 /* subwayDoorPositionApp WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				F101894D280D447800D175B9 /* controller */,
 				F1CA96E127FB1F57005FFAF5 /* InterfaceController.swift */,
 				F1CA96E327FB1F57005FFAF5 /* ExtensionDelegate.swift */,
 				F1CA96E527FB1F57005FFAF5 /* ComplicationController.swift */,
@@ -174,6 +204,7 @@
 			children = (
 				F1CA96F827FBBC6D005FFAF5 /* stopInfo.swift */,
 				F187DDE62803FB5E00888AC9 /* StopButton.swift */,
+				F187DDE828052CE500888AC9 /* stopMarkerView.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -312,6 +343,7 @@
 			files = (
 				F1CA96C227FB1F55005FFAF5 /* ViewController.swift in Sources */,
 				F187DDE72803FB5E00888AC9 /* StopButton.swift in Sources */,
+				F187DDE928052CE500888AC9 /* stopMarkerView.swift in Sources */,
 				F1CA96BE27FB1F55005FFAF5 /* AppDelegate.swift in Sources */,
 				F1CA96FB27FBF548005FFAF5 /* TravelInfoViewController.swift in Sources */,
 				F1CA96C027FB1F55005FFAF5 /* SceneDelegate.swift in Sources */,
@@ -325,7 +357,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1CA96E427FB1F57005FFAF5 /* ExtensionDelegate.swift in Sources */,
+				F1018953280D44B600D175B9 /* DoorInfoView.swift in Sources */,
+				F101894F280D449600D175B9 /* TrainLaneInfoView.swift in Sources */,
 				F1CA96E227FB1F57005FFAF5 /* InterfaceController.swift in Sources */,
+				F1018951280D44A700D175B9 /* CurrentLocationView.swift in Sources */,
+				F101894C280D41D800D175B9 /* HomeWKInterfaceController.swift in Sources */,
 				F1CA96E627FB1F57005FFAF5 /* ComplicationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

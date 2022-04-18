@@ -11,17 +11,35 @@ import UIKit
 
 class InterfaceController: WKInterfaceController {
 
-    @IBOutlet weak var SubwayInfoButton: WKInterfaceButton!
+    @IBOutlet weak var myTimer: WKInterfaceTimer!
+    
+    @IBOutlet weak var timerButton: WKInterfaceButton!
+    
+    var isTimerStarted = false
+    var startTime = Date()
+    var elapsedTime: TimeInterval = 0.1
     
     override func awake(withContext context: Any?) {
         // Configure interface objects here.
         
-        SubwayInfoButton.setTitle("지하철 정보")
+        timerButton.setTitle("START")
     }
     
-    @IBAction func SubwayInfoButtonTapped() {
-        presentController(withName: "subwayInfo", context: .none)
+    
+    @IBAction func myTimeAction() {
+        isTimerStarted = !isTimerStarted
+        if isTimerStarted {
+            startTime = Date()
+            timerButton.setTitle("STOP")
+            myTimer.setDate(Date(timeIntervalSinceNow: 10))
+        } else {
+            let stoppedTime = Date()
+            elapsedTime += stoppedTime.timeIntervalSince(startTime)
+            timerButton.setTitle("START")
+            myTimer.stop()
+        }
     }
+    
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
     }

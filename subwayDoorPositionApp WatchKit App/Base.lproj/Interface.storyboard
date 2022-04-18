@@ -1,35 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="20037" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="20037" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="QAo-of-fJh">
     <device id="watch38"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="20006"/>
     </dependencies>
     <scenes>
+        <!--TrainLaneInfoView-->
+        <scene sceneID="nJF-CG-xYt">
+            <objects>
+                <controller identifier="TrainLaneInfoView" id="mWg-pP-rmN" customClass="TrainLaneInfoView" customModule="subwayDoorPositionApp_WatchKit_Extension"/>
+            </objects>
+            <point key="canvasLocation" x="-27" y="-342"/>
+        </scene>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="subwayDoorPositionApp_WatchKit_App" customModuleProvider="target">
                     <items>
+                        <timer width="133" alignment="left" id="G7G-eb-qvK"/>
                         <button width="1" alignment="left" title="지하철" id="06A-xO-VnZ">
                             <connections>
-                                <action selector="SubwayInfoButtonTapped" destination="AgC-eL-Hgc" id="tsf-Da-NNh"/>
+                                <action selector="myTimeAction" destination="AgC-eL-Hgc" id="Zk0-hb-vy1"/>
                             </connections>
                         </button>
                     </items>
                     <connections>
-                        <outlet property="SubwayInfoButton" destination="06A-xO-VnZ" id="wHT-Wk-ESv"/>
+                        <outlet property="myTimer" destination="G7G-eb-qvK" id="hxM-Wd-Itq"/>
+                        <outlet property="timerButton" destination="06A-xO-VnZ" id="7c7-H8-uso"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-26" y="-44"/>
+            <point key="canvasLocation" x="-208" y="497"/>
         </scene>
         <!--SubwayInfo-->
         <scene sceneID="Lzm-pv-0Ma">
             <objects>
-                <controller identifier="SubwayInfo" id="QAo-of-fJh" customClass="SubwayInfomationController" customModule="subwayDoorPositionApp_WatchKit_Extension"/>
+                <controller identifier="SubwayInfo" id="QAo-of-fJh" customClass="HomeWKInterfaceController" customModule="subwayDoorPositionApp_WatchKit_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="지하철 정보" id="GbW-aB-VeU">
+                            <connections>
+                                <action selector="TrainLaneInfoButtonTapped" destination="QAo-of-fJh" id="hRc-oM-y1U"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="위치" id="VS5-yO-h5d">
+                            <connections>
+                                <action selector="LocationInfoButtonTapped" destination="QAo-of-fJh" id="ywh-vJ-OnD"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="문 정보" id="RMF-4p-0bi">
+                            <connections>
+                                <action selector="DoorPosiButtonTapped" destination="QAo-of-fJh" id="S0E-h2-rOK"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="DoorPosiInfoButton" destination="RMF-4p-0bi" id="vyE-pP-Sqd"/>
+                        <outlet property="LocationInfoButton" destination="VS5-yO-h5d" id="tgv-u5-AAX"/>
+                        <outlet property="TrainLaneInfoButton" destination="GbW-aB-VeU" id="poZ-Ms-fnH"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="207" y="-44"/>
+            <point key="canvasLocation" x="-280" y="-38"/>
+        </scene>
+        <!--CurrentLocationView-->
+        <scene sceneID="uDi-68-Zbm">
+            <objects>
+                <controller identifier="CurrentLocationView" id="xJ5-O3-ncv" customClass="CurrentLocationView" customModule="subwayDoorPositionApp_WatchKit_Extension"/>
+            </objects>
+            <point key="canvasLocation" x="-27" y="-58"/>
+        </scene>
+        <!--DoorInfoView-->
+        <scene sceneID="K1H-wI-Qwc">
+            <objects>
+                <controller identifier="DoorInfoView" id="7HW-zf-KQn" customClass="DoorInfoView" customModule="subwayDoorPositionApp_WatchKit_Extension"/>
+            </objects>
+            <point key="canvasLocation" x="-27" y="227"/>
         </scene>
     </scenes>
 </document>
